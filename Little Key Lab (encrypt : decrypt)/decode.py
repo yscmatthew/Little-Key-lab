@@ -6,11 +6,11 @@ dec_key = int(input("please input the password: "))
 doublepick = ''
 decode_result = ''
 for x in range(0,len(gonum),2):
-    #doublepick {
+    #doublepick [
     doublepick = gonum[x]
     doublepick += gonum[x + 1]
     doublepick = int(doublepick)
-    #}
+    #]
 
     doublepick -= (dec_key % (len(gonum) / 2))
     if doublepick < 0:
